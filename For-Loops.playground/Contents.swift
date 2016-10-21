@@ -1,4 +1,4 @@
-// : # For Loops:
+//: # For Loops:
 //: [Playground to accompany this tutorial article](http://troz.net/2016/03/learning-swift-loops/)
 //:
 
@@ -18,23 +18,23 @@ for x in 0 ... 5 {
 result
 
 //: ## Striding through a range:
-//: stride(to:by:):
+//: stride(from:to:by:):
 result = []
-for x in 0.stride(to: 10, by: 2) {
+for x in stride(from: 0, to: 10, by: 2) {
     result.append(x)
 }
 result
 
-//: stride(through:by:):
+//: stride(from:through:by:):
 result = []
-for x in 0.stride(through: 10, by: 2) {
+for x in stride(from: 0, through: 10, by: 2) {
     result.append(x)
 }
 result
 
 //: stride by a negative amount:
 result = []
-for x in 10.stride(through: 0, by: -2) {
+for x in stride(from: 10, through: 0, by: -2) {
     result.append(x)
 }
 result
@@ -42,7 +42,7 @@ result
 //: stride with floating point numbers:
 var resultDouble: [Double] = []
 let startingNumber = 0.1
-for x in startingNumber.stride(through: 1.0, by: 0.2) {
+for x in stride(from: startingNumber, through: 1.0, by: 0.2) {
     resultDouble.append(x)
 }
 resultDouble
@@ -76,7 +76,7 @@ resultString
 //: ## Looping through an array using enumerate():
 let arrayOfNames = ["Andy", "Buzz", "Woody"]
 resultString = []
-for (index, element) in arrayOfNames.enumerate() {
+for (index, element) in arrayOfNames.enumerated() {
     resultString.append("The name at index \(index) is \(element)")
 }
 resultString
