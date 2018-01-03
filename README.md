@@ -2,6 +2,6 @@
 
 Playground for Learning Swift - For-Loops
 
-http://troz.net/2016/03/learning-swift-loops/
+https://troz.net/post/2016/learning-swift-for-loops/
 
-Now updated to Swift 3 syntax.
+Now updated to Swift 4 syntax.

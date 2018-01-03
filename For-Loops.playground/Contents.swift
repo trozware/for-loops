@@ -1,5 +1,5 @@
 //: # For Loops:
-//: [Playground to accompany this tutorial article](http://troz.net/2016/03/learning-swift-loops/)
+//: [Playground to accompany this tutorial article](https://troz.net/post/2016/learning-swift-for-loops/)
 //:
 
 //: ## Looping through a range:
@@ -91,7 +91,7 @@ resultString
 
 //: ## Looping through an array with where:
 resultString = []
-for case let name? in arrayWithOptionals where name.characters.count < 5 {
+for case let name? in arrayWithOptionals where name.count < 5 {
     resultString.append(name)
 }
 resultString
